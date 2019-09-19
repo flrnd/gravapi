@@ -4,9 +4,7 @@ import { gravatarUri } from '../util';
 const router = Router();
 
 router.get('/', (req, res) => {
-  res
-    .status(200)
-    .send({ message: `welcome to gravatar email converter api ${req}` });
+  res.status(200).send({ message: `welcome to gravatar email converter api` });
 });
 
 router.get('/api/v1/:email', (req, res) => {
